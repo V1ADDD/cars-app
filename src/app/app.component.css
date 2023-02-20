@@ -1,0 +1,217 @@
+
+.header {
+  background: #FFFFFF;
+  padding: 25px 688px 25px 18.75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 244px;
+  border-bottom: 1px #E5E5E5 solid;
+}
+
+.header .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 115px;
+}
+
+.nav-element {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 9px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-element:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.main {
+  background: url("../assets/images/background.png");
+}
+
+.main .container {
+  padding-left: 18.75%;
+  padding-top: 105px;
+  height: 600px;
+}
+
+.container h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  width: 855px;
+}
+
+.container .text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  width: 502px;
+  margin-top: 40px;
+}
+
+button {
+  margin-top: 40px;
+  padding: 20px 53px;
+  color: white;
+  background: #030305;
+  border: 0;
+  transition: background-color 0.5s;
+}
+
+.cars h2, .contact h2 {
+  padding-left: 18.75%;
+  padding-top: 100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.cars .container {
+  padding-right: 18.75%;
+  padding-left: 18.75%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
+}
+
+.car {
+  width: 20vw;
+}
+
+.car h3 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+
+.car button {
+  margin-top: 13px;
+  width: 100%;
+}
+
+.params {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 15px;
+}
+
+.params div p {
+  margin-top: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+.params div span {
+  margin-top: 11px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+.contact p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #5D5D5F;
+  margin-bottom: 60px;
+}
+
+.contact .container {
+  padding-right: 18.75%;
+  padding-left: 18.75%;
+  margin-top: 20px;
+}
+
+input {
+  display: block;
+  border: 1px solid #5D5D5F;
+  padding: 22px 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  width: 344px;
+  margin-bottom: 15px;
+}
+
+form button {
+  margin-top: 0;
+  width: 384px;
+}
+
+input::placeholder {
+  color: #5D5D5F;
+}
+
+.contact .container img {
+  display: flex;
+  position: absolute;
+  left: 761px;
+}
+
+footer {
+  margin-top: 122px;
+  background: #FFFFFF;
+  padding: 25px 688px 25px 18.75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48vw;
+  border-top: 1px #E5E5E5 solid;
+}
+
+.rights {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  margin-top: 9px;
+  white-space: nowrap;
+}
+
+button:hover:not(:disabled) {
+  background-color: rgba(40, 40, 40, 0.76);
+  cursor: pointer;
+}
+
+button:disabled{
+  cursor: not-allowed;
+  color: gray;
+  background-color: #343434;
+}
+
+.car:hover > img {
+  transform: scale(1.1);
+}
+
+.car > img {
+  vertical-align: bottom;
+  transition: all .3s;
+}
+
+form > input.ng-touched.ng-valid{
+  border: 1px solid #5D5D5F;
+}
+form > input.ng-touched.ng-invalid{
+  border: 1px solid red;
+}
